@@ -1,0 +1,101 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
+
+body{
+    background: var(--color-primary);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "MacBookAir MacBookProApp MacBookProApp"
+    "MacBookAir MacBookProApp MacBookProApp"
+    "MacBookAirScreen MacBookAirScreen MacBookPro"
+    "MacBookAirScreen MacBookAirScreen MacBookPro"
+    ;
+
+    grid-gap: 8px;
+    width: 800px;
+    height: 700px;
+    margin: 15px auto;
+}.container div{
+    background: var(--color-secundary);
+    border-radius: 8px;
+}
+.item__1{
+    grid-area: MacBookAir;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__1 .img{
+    height: 20vh;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+.text{
+    color: var(--color-price);
+    margin-bottom: 8px;
+}
+.item__1 .colors{
+    height: 2vh;
+    width: 25%;
+    object-fit: contain;
+    margin-top: 5px;
+}
+.price{
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.item__2{
+    grid-area: MacBookProApp;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.item__2 h2{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+.item__2 h1{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.item__2 img{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 31vh;
+    object-fit: contain;
+}
+.item__3{
+    grid-area: MacBookAirScreen;
+}
+.item__4{
+    grid-area: MacBookPro;
+}
+
+@media (width < 800px){
+    .container{
+        width: 100%;
+        grid-template-areas: 
+        "MacBookAir MacBookAir MacBookAir"
+        "MacBookProApp MacBookProApp MacBookProApp"
+        "MacBookAirScreen MacBookAirScreen MacBookAirScreen"
+        "MacBookPro MacBookPro MacBookPro"
+        ;
+    }
+}
