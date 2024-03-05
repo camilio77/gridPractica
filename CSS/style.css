@@ -1,0 +1,242 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: var(--color-secundary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 97%;
+    height: 95vh;
+    display: grid;
+    grid-template-areas: 
+    "nits nits nits nits nits nits GPS GPS GPS GPS GPS Depth Depth Depth Carbon Carbon Carbon Carbon Carbon Carbon"
+    "nits nits nits nits nits nits GPS GPS GPS GPS GPS Depth Depth Depth Carbon Carbon Carbon Carbon Carbon Carbon"
+    "nits nits nits nits nits nits GPS GPS GPS GPS GPS Depth Depth Depth Carbon Carbon Carbon Carbon Carbon Carbon"
+    "nits nits nits nits nits nits GPS GPS GPS GPS GPS Depth Depth Depth Carbon Carbon Carbon Carbon Carbon Carbon"
+    "nits nits nits nits nits nits watch watch watch watch watch watch watch watch Carbon Carbon Carbon Carbon Carbon Carbon"
+    "elevation elevation elevation modular modular modular watch watch watch watch watch watch watch watch Carbon Carbon Carbon Carbon Carbon Carbon"
+    "elevation elevation elevation modular modular modular watch watch watch watch watch watch watch watch battery battery battery dive dive dive"
+    "elevation elevation elevation modular modular modular watch watch watch watch watch watch watch watch battery battery battery dive dive dive"
+    "new new new new new new watch watch watch watch watch watch watch watch Customizable Customizable Customizable Customizable Customizable Customizable"
+    "new new new new new new watch watch watch watch watch watch watch watch Customizable Customizable Customizable Customizable Customizable Customizable"
+    "Sip Sip Sip Sip Siri Siri cycling cycling Precision Precision Precision Precision Flashlight Flashlight gesture gesture gesture gesture gesture gesture"
+    "Sip Sip Sip Sip Siri Siri cycling cycling Precision Precision Precision Precision Flashlight Flashlight gesture gesture gesture gesture gesture gesture"
+    "Sip Sip Sip Sip Siri Siri cycling cycling Precision Precision Precision Precision Flashlight Flashlight gesture gesture gesture gesture gesture gesture"
+    ;
+
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-gap: 8px;
+}
+.container div{
+    border-radius: 13px;
+    background: var(--color-primary);
+    object-fit: contain;
+}
+
+.container .item1{
+    grid-area: nits;
+    box-sizing: border-box;
+}
+.container .item1 img{
+    width: 100%;
+    height: 36vh;
+    object-fit: fill;
+}
+
+.container .item2{
+    grid-area: GPS;
+    box-sizing: border-box;
+}
+.container .item2 img{
+    width: 100%;
+    height: 28.4vh;
+    object-fit: fill;
+}
+
+.container .item3{
+    grid-area: Depth;
+    box-sizing: border-box;
+}
+.container .item3 img{
+    width: 100%;
+    height: 28vh;
+    object-fit: contain;
+}
+
+.container .item4{
+    grid-area: Carbon;
+    box-sizing: border-box;
+}
+.container .item4 img{
+    width: 100%;
+    height: 43vh;
+    object-fit: fill;
+}
+
+.container .item5{
+    grid-area: elevation;
+    box-sizing: border-box;
+}
+.container .item5 img{
+    width: 100%;
+    height: 21vh;
+    object-fit:contain;
+}
+
+.container .item6{
+    grid-area: modular;
+    box-sizing: border-box;
+}
+.container .item6 img{
+    width: 100%;
+    height: 21vh;
+    object-fit: contain;
+}
+
+.container .item7{
+    grid-area: watch;
+    box-sizing: border-box;
+}
+.container .item7 img{
+    width: 100%;
+    height: 43.5vh;
+    object-fit:contain;
+}
+
+.container .item8{
+    grid-area: battery;
+    box-sizing: border-box;
+}
+.container .item8 img{
+    width: 100%;
+    height: 13.2vh;
+    object-fit: contain;
+}
+
+.container .item9{
+    grid-area: dive;
+    box-sizing: border-box;
+}
+.container .item9 img{
+    width: 100%;
+    height: 13.2vh;
+    object-fit: contain;
+}
+
+.container .item10{
+    grid-area: new;
+    box-sizing: border-box;
+}
+.container .item10 img{
+    width: 100%;
+    height: 13.2vh;
+    object-fit: contain;
+}
+
+.container .item11{
+    grid-area: Customizable;
+    box-sizing: border-box;
+}
+.container .item11 img{
+    width: 100%;
+    height: 13.2vh;
+    object-fit: contain;
+}
+
+.container .item12{
+    grid-area: Sip;
+    box-sizing: border-box;
+}
+.container .item12 img{
+    width: 100%;
+    height: 20.7vh;
+    object-fit: contain;
+}
+
+.container .item13{
+    grid-area: Siri;
+    box-sizing: border-box;
+}
+.container .item13 img{
+    width: 100%;
+    height: 20.7vh;
+    object-fit: contain;
+}
+
+.container .item14{
+    grid-area: cycling;
+    box-sizing: border-box;
+}
+.container .item14 img{
+    width: 100%;
+    height: 20.7vh;
+    object-fit: contain;
+}
+
+.container .item15{
+    grid-area: Precision;
+    box-sizing: border-box;
+}
+.container .item15 img{
+    width: 100%;
+    height: 20.7vh;
+    object-fit: contain;
+}
+
+.container .item16{
+    grid-area: Flashlight;
+    box-sizing: border-box;
+}
+.container .item16 img{
+    width: 100%;
+    height: 20.7vh;
+    object-fit: contain;
+}
+
+.container .item17{
+    grid-area: gesture;
+    box-sizing: border-box;
+}
+.container .item17 img{
+    width: 100%;
+    height: 20.7vh;
+    object-fit: contain;
+}
+
+.container div img{
+    border-radius: 13px;
+    object-fit: contain;
+}
+
+@media (width < 900px){
+    .container{
+        width: 100%;
+        grid-template-areas: 
+        "nits nits nits nits nits nits nits nits nits nits nits nits nits nits nits nits nits nits nits nits"
+        "GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS GPS"
+        "Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth Depth"
+        "Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon Carbon"
+        "watch watch watch watch watch watch watch watch watch watch watch watch watch watch watch watch watch watch watch watch"
+        "elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation elevation"
+        "modular modular modular modular modular modular modular modular modular modular modular modular modular modular modular modular modular modular modular modular"
+        "battery battery battery battery battery battery battery battery battery battery battery battery battery battery battery battery battery battery battery battery"
+        "dive dive dive dive dive dive dive dive dive dive dive dive dive dive dive dive dive dive dive dive"
+        "new new new new new new new new new new new new new new new new new new new new"
+        "Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable Customizable"
+        "Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip Sip"
+        "Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri Siri"
+        "cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling cycling"
+        "Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision Precision"
+        "Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight Flashlight"
+        "gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture"
+        ;
+    }
+}
